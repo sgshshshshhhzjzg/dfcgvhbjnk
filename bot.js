@@ -565,7 +565,7 @@ client.on("message", async msg => {
             msg.delete();  
 const embed1 = new Discord.RichEmbed()
         .setColor("BLUE")
-        .setDescription(`${msg.author} Küfür Etmemelisin**!** ${client.emojis.get("649299260906405919")}`)
+        .setDescription(`${msg.author} Küfür Etmemelisin**!** :rage:`)
                   return msg.channel.send(embed1).then(msg => msg.delete(3000));           
             }              
           } catch(err) {

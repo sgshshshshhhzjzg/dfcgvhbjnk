@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+https://glitch.com/edit/#!/erotr?path=komutlar/discokomutlar%C4%B1.js:15:16const Discord = require('discord.js');
 const db = require('quick.db')
 const fs = require("fs")
 const ms = require("ms")

@@ -8,13 +8,13 @@ exports.run = (client, message, args) => {
  var user = message.mentions.users.first() || message.author; 
   const duration = client.uptime
 const embed = new Discord.RichEmbed()
-.setAuthor("MC-EŞŞEK", client.user.avatarURL)
-.setTitle("MC-EŞŞEK BOT")
-.setURL("https://goo.gl/vJvz9g")
-.setDescription("www.Mcadventuretime.com tarafından hazırlanmıştır.")
+.setAuthor("Racon", client.user.avatarURL)
+.setTitle("Racon Davet")
+.setURL("https://discordapp.com/oauth2/authorize?client_id=699035846900449300&scope=bot&permissions=805829694")
+.setDescription("! Eren#1499 Tarafından hazırlanmıştır")
 .setColor("BLUE")
 .setTimestamp()
-.setFooter("© Mcadventuretime.com", client.user.avatarURL)
+.setFooter("© Racon", client.user.avatarURL)
 .addField("Kullanılan RAM miktarı", `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`)
 .addField("Toplam RAM miktarı", `${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} MB`)
 .addField("Toplam sunucu sayısı", `${client.guilds.size.toLocaleString()}`)

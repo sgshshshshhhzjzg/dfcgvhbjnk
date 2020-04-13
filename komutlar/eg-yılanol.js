@@ -29,5 +29,5 @@ exports.conf = {
 exports.help = {
   name: 'yılan-ol',
   description: 'taslak', 
-  usage: 'sayac-hg-msg'
+  usage: 'yılanol'
 };

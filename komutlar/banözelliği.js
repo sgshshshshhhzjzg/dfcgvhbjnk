@@ -3,7 +3,7 @@ const db = require('quick.db')
 exports.run = (client, message, args) => { 
   
 const embed = new Discord.RichEmbed()  
-.setAuthor("EŞŞEK-AT", client.user.avatarURL)
+.setAuthor("STARK - AT", client.user.avatarURL)
 .setColor('BLUE')
 .setTimestamp()
 .setDescription("Merhaba Öncelikle Sunucunuzdaki Herkesi Banlama Riski Olan Üyelerin Önüne Geçmek İçin Bunu Kullanın")

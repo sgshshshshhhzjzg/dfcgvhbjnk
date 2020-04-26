@@ -8,7 +8,7 @@ const embed = new Discord.RichEmbed()
      .setTitle('MC-EŞEK BOT')
      .setURL('https://discord.gg/bWjWHK')
      .setColor('BLUE')
-     .setDescription("Sunucu koruma sistemlerinin bulunduğu bölüm;")     //ula enayi stark setDesctipyion varken niye addfield ile ortalığı karıştırdın :D
+     .setDescription("Sunucu koruma sistemlerinin bulunduğu bölüm;")    
      .addField('!koruma-log #logkanal', ' ```Koruma kayıtlarının gönderileceği kanalı belirler.```')
      .addField('!koruma-banlimit <sayı>', '```Sunucuda birisi 10 dakika içerisinde belirlenen sayının üzerinde ban atarsa o üyeyi sunucundan atar. (kickler) Yönetici yetkisini ve botlarıda görür. (TAM KORUMA İÇİN İDEALDİR) ```')
      .addField('!koruma-kanallimit <sayı>','```30 dakika içerisinde bir üye tarafından belirtilen sayıdan fazla kanal silerse üye sunucudan atılır.```')

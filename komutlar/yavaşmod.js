@@ -11,7 +11,7 @@ const limit = args[0];
               var embed = new Discord.RichEmbed()
                 .setDescription("Doğru kullanım: `!yavaş-mod [0-∞]`")
               .setColor("RANDOM")
-     .setFooter('© MC-AT',client.user.avatarURL)
+     .setFooter('© Leusa',client.user.avatarURL)
 .setTimestamp()
               msg.channel.send({embed: embed})
             return

@@ -4,19 +4,19 @@ exports.run = async(client, message, args) => {
  
  const Embed = new Discord.RichEmbed()
  .setTimestamp()
- .setAuthor("EŞŞEK-AT", client.user.avatarURL)
+ .setAuthor("leusa", client.user.avatarURL)
 .setColor("BLUE")
-.setTitle("EŞŞEK-AT BOT")
+.setTitle("leusa- BOT")
  .setURL("https://discordapp.com/oauth2/authorize?client_id=647386467844227074&scope=bot&permissions=8")
  .setDescription(`
 
-**!yardım**, ile yardım alabilirsiniz.
+**.yardım**, ile yardım alabilirsiniz.
 Örnek komut kullanımı: \`!küfüraç\`
 Botu davet etmek için: \`!davet\`
 `)
  .addField("!komutlar (13)", `
 herkesin kullanabileceği standart komutlar;
-\`botbilgi\`,\`davet\`,\`oyver\`,\`gold\`,\`webpanel\`,\`sunucu-pp\`,\`profil\`,\`kredim\`,\`p-market\`,\`p-menü\`,\`puanım\`,\`ayarlar\`
+\`botbilgi\`,\`davet\`,\`Leusa\`,\`gold\`,\`webpanel\`,\`sunucu-pp\`,\`profil\`,\`kredim\`,\`p-market\`,\`p-menü\`,\`puanım\`,\`ayarlar\`
 `)
  .addField("!eğlence (9)", `
 herkesin kullanabileceği eğlence komutları;

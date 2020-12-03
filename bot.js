@@ -115,11 +115,13 @@ client.elevation = message => {
     if (!message.guild) {
         return;
     }
-    let permlvl = 0;
-    if (message.member.hasPermission("BAN_MEMBERS")) permlvl = 2;
-    if (message.member.hasPermission("ADMINISTRATOR")) permlvl = 3;
-    if (message.author.id === ayarlar.sahip) permlvl = 5;
-    return permlvl;
+  let permlvl = 0;
+  if (message.member.permissions.has("MANAGE_MESSAGES")) permlvl = 1;
+  if (message.member.permissions.has("KİCK_MEMBERS")) permlvl = 2;
+  if (message.member.permissions.has("BAN_MEMBERS")) permlvl = 3;
+  if (message.member.permissions.has("ADMINISTRATOR")) permlvl = 4;
+  if (message.author.id === message.guild.owner) permlvl = 5;
+  return permlvl;
 };
 
 client.on("guildMemberAdd", async member => {

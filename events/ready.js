@@ -5,7 +5,6 @@ const ayarlar = require('../ayarlar.json');
 
 var prefix = ayarlar.prefix;
 
-
 module.exports = client => {
   console.log(`${client.user.username} ismi ile giriş yapıldı!`);
   client.user.setStatus("dnd");

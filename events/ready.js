@@ -1,22 +1,23 @@
-const chalk = require('chalk');
-const moment = require('moment');
-const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json');
+const chalk = require("chalk");
+
+const moment = require("moment");
+
+const Discord = require("discord.js");
+
+const ayarlar = require("../ayarlar.json");
 
 var prefix = ayarlar.prefix;
 
 module.exports = client => {
-  console.log(`${client.user.username} ismi ile giriş yapıldı!`);
-  client.user.setStatus("dnd");
-  //idle = boşta
-  //dnd = rahatsız etmeyin
-  //online = çevrimiçi
-  console.log(`${client.user.id}                                                                                                                                                                     `)
-  //client.user.setActivity(`${prefix}yardım | ${client.guilds.size} sunucu | ${client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} Kullanıcıyı`, { type: "LISTENING"});
+  setInterval(function() {}, 8000);
 
-client.user.setActivity(`${prefix}yardım | ${client.guilds.size} sunucu | ${client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()} Kullanıcıyı`, { type: "LISTENING"});
-//LISTENING = DİNLİYOR
-  //WATCHING = İZLİYOR
-  //PLAYING = OYNUYOR 
-  console.log(`${client.user.username}: Şu an ` + client.channels.size + ` adet kanala, ` + client.guilds.size + ` adet sunucuya ve ` + client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + ` kullanıcıya hizmet veriliyor!`);
+  client.user.setPresence({
+    game: {
+      name: ` helo `,
+
+      type: "Playing Crew ❤️" //WATCHING - İZLİYOR LISTINING - DİNLİYOR
+    },
+
+    status: "online" //online - Çevrimiçi idle - Boşta
+  });
 };
